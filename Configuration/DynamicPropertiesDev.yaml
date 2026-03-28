@@ -1,0 +1,11 @@
+apiVersion: 1.0
+kind: dynamicProperties
+metadata:
+  name: DynamicProperties
+  description: Root Dynamic Properties
+spec:
+  organizationalUnit: [Description, Actions]
+  folder: []
+  job: []
+  runner: []
+  credential: []  

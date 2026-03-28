@@ -1,0 +1,51 @@
+apiVersion: 1.0
+kind: organizationalUnit
+metadata:
+  name: Dev
+  description: Development
+spec:
+  scmProvider: GitHub
+  scmOwner: daciertech
+  scmRepository: SchedulerStartup
+  scmBranch: dev
+  scmPath: Entities
+  themeName: Blue
+  
+  variables:
+  -
+    variableName: AppEnvironment
+    value: Development
+    readOnly: true
+    locked: true
+    hidden: true
+
+  actions:
+  - action: completedJob
+    name: CompletedJob
+    matchTags: [Default]
+    enabled: false
+    summaryMessage: 'Job {Job.Name} completed'
+    detailedMessage: |
+      # Job Completed
+
+      The job {Job.Name} has completed with status {Job.Status}.
+
+  - action: failedJob
+    name: FailedJob
+    matchTags: [Default]
+    summaryMessage: 'Job {Job.Name} failed'
+    detailedMessage: |
+      # Job Failed
+
+      The job {Job.Name} has failed.
+      Details are available here: [Active Link]({ActiveLink}).
+
+  - action: email
+    name: EMail
+    matchTags: [Default]
+    replyToAddress: 'Support@ThisIsYourCompany.com'
+
+  - action: cronSchedule
+    enabled: true
+
+ 

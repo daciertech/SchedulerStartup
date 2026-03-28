@@ -1,0 +1,7 @@
+apiVersion: 1.0
+kind: folder
+metadata:
+  name: Samples
+  description: Sample Job definitions
+  tags: [Sample]
+spec:
