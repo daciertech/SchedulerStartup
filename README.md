@@ -199,3 +199,19 @@ You can sync the source control with your instance of the Dacier Scheduler with 
 ```bash
 schedulercli sync Dev
 ```
+
+## Deploy a Runner
+
+Before you can run jobs you have to deploy at least one runner.
+
+### Azure Runners
+
+You can deploy a runner is Azure by doing *TBS*.
+
+### Unix/Linux Runners
+
+To deploy a runner on a Unix or Linux server (or VM), download an installer from *TBS*.
+
+### Windows Runners
+
+To deploy a runner on a Windows server (or VM), download an installer from *TBS*.
