@@ -6,7 +6,7 @@ You can use this repository as a template to create your own Dacier Scheduler re
 ## Get an Instance
 
 The first step is to get an instance of the Dacier Scheduler that is associated with your Azure credentials.
-If you don't have an instance, go to TBS or contact your sales person.
+If you don't have an instance, go to [Azure Marketplace](https://marketplace.microsoft.com/en-us/product/daciertechnologiesinc1620936881970.dacier_scheduler) or contact your sales person.
 
 ## Install our CLI
 
@@ -206,7 +206,7 @@ Before you can run jobs you have to deploy at least one runner.
 
 ### Azure Runners
 
-You can deploy a runner is Azure by doing *TBS*.
+You can deploy a runner is Azure by doing see: [Deploy a Runner](DeployRunner.md).
 
 ### Unix/Linux Runners
 
