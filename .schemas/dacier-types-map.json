@@ -1,0 +1,36 @@
+{
+  "kinds": [
+    "cli",
+    "containerjob",
+    "dynamicProperties",
+    "folder",
+    "job",
+    "organizationalUnit",
+    "restjob",
+    "runner",
+    "subflow",
+    "workflow"
+  ],
+  "steps": [
+    "cli",
+    "CSharpScript",
+    "Delay",
+    "ForEach",
+    "if",
+    "Parallel",
+    "PSForEach",
+    "PSScript",
+    "PyForEach",
+    "PyScript",
+    "Sequence",
+    "Subflow",
+    "Submit",
+    "while"
+  ],
+  "actions": [
+    "completedJob",
+    "cronSchedule",
+    "email",
+    "failedJob"
+  ]
+}
